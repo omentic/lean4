@@ -9,6 +9,9 @@ import Init.Data.Float
 import Init.Data.Option.Basic
 universe u
 
+/--
+A real unboxed float array, unlike `Array Float` which is an array of pointers for ABI reasons.
+--/
 structure FloatArray where
   data : Array Float
 
