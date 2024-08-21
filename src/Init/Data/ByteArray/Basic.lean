@@ -10,6 +10,9 @@ import Init.Data.UInt.Basic
 import Init.Data.Option.Basic
 universe u
 
+/--
+A real unboxed byte array, unlike `Array UInt8` which is an array of pointers for ABI reasons.
+--/
 structure ByteArray where
   data : Array UInt8
 
